@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クリックゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⭐ クリックゲーム</h1>
+        
+        <div class="game-info">
+            <div class="info-item">
+                <span class="label">スコア:</span>
+                <span class="value" id="score">0</span>
+            </div>
+            <div class="info-item">
+                <span class="label">時間:</span>
+                <span class="value" id="timer">30</span>
+                <span class="label">秒</span>
+            </div>
+        </div>
+
+        <button id="startBtn" class="start-btn">ゲーム開始</button>
+
+        <div id="gameArea" class="game-area"></div>
+
+        <div id="gameOverModal" class="modal hidden">
+            <div class="modal-content">
+                <h2>ゲーム終了！</h2>
+                <p>最終スコア: <span id="finalScore">0</span></p>
+                <button id="retryBtn" class="retry-btn">もう一度プレイ</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
