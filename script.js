@@ -54,7 +54,7 @@ class ClickGame {
 
         const star = document.createElement('div');
         star.className = 'star';
-        star.textContent = '⭐';
+        star.textContent = '★';
         star.id = `star-${Date.now()}`;
 
         const x = Math.random() * (this.gameArea.clientWidth - 50);
