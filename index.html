@@ -1,40 +1,63 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ネオンクリック</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #6db3f2, #1e69d2);
+            color: #fff;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin: 15px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        h2 {
+            margin: 10px 0;
+        }
+        p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
+    <h1>My Portfolio</h1>
     <div class="container">
-        <h1>⚡ ネオンクリック ⚡</h1>
-        
-        <div class="game-info">
-            <div class="info-item">
-                <span class="label">スコア:</span>
-                <span class="value" id="score">0</span>
-            </div>
-            <div class="info-item">
-                <span class="label">時間:</span>
-                <span class="value" id="timer">30</span>
-                <span class="label">秒</span>
-            </div>
+        <div class="project-card">
+            <h2>Project 1</h2>
+            <p>Description of project 1.</p>
         </div>
-
-        <button id="startBtn" class="start-btn">ゲーム開始</button>
-
-        <div id="gameArea" class="game-area"></div>
-
-        <div id="gameOverModal" class="modal hidden">
-            <div class="modal-content">
-                <h2>ゲーム終了！</h2>
-                <p>最終スコア: <span id="finalScore">0</span></p>
-                <button id="retryBtn" class="retry-btn">もう一度プレイ</button>
-            </div>
+        <div class="project-card">
+            <h2>Project 2</h2>
+            <p>Description of project 2.</p>
+        </div>
+        <div class="project-card">
+            <h2>Project 3</h2>
+            <p>Description of project 3.</p>
+        </div>
+        <div class="project-card">
+            <h2>Project 4</h2>
+            <p>Description of project 4.</p>
         </div>
     </div>
-<!-- ゲームのスクリプト -->
-    <script src="script.js"></script>
 </body>
 </html>
