@@ -40,23 +40,15 @@
     </style>
 </head>
 <body>
-    <h1>My Portfolio</h1>
-    <div class="container">
-        <div class="project-card">
-            <h2>Project 1</h2>
-            <p>Description of project 1.</p>
-        </div>
-        <div class="project-card">
-            <h2>Project 2</h2>
-            <p>Description of project 2.</p>
-        </div>
-        <div class="project-card">
-            <h2>Project 3</h2>
-            <p>Description of project 3.</p>
-        </div>
-        <div class="project-card">
-            <h2>Project 4</h2>
-            <p>Description of project 4.</p>
+    <button id="startBtn" class="start-btn">ゲーム開始</button>
+
+    <div id="gameArea" class="game-area"></div>
+
+    <div id="gameOverModal" class="modal hidden">
+        <div class="modal-content">
+            <h2>ゲーム終了！</h2>
+            <p>最終スコア: <span id="finalScore">0</span></p>
+            <button id="retryBtn" class="retry-btn">リトライ</button>
         </div>
     </div>
 </body>
