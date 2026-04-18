@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>横スクロールアクションゲーム</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    ようこそ私のページへ！
+    <div id="gameContainer">
+        <div id="player"></div>
+        <div id="enemies"></div>
+    </div>
+    
+    <div id="ui">
+        <p>矢印キーで移動 | ゲームオーバー時はリロード</p>
+    </div>
+
+    <script src="game.js"></script>
 </body>
 </html>

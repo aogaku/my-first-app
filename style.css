@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    overflow: hidden;
+}
+
+#gameContainer {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #87ceeb, #e0f6ff);
+    position: relative;
+    overflow: hidden;
+}
+
+#player {
+    width: 40px;
+    height: 50px;
+    background-color: #ff6b6b;
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+    border-radius: 4px;
+    transition: all 0.05s linear;
+}
+
+#player::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 15px;
+    left: 8px;
+}
+
+#player::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 15px;
+    left: 24px;
+}
+
+.enemy {
+    width: 45px;
+    height: 45px;
+    background-color: #4ecdc4;
+    position: absolute;
+    border-radius: 4px;
+    bottom: 100px;
+}
+
+.enemy::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #000;
+    border-radius: 50%;
+    top: 12px;
+    left: 8px;
+}
+
+.enemy::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #000;
+    border-radius: 50%;
+    top: 12px;
+    left: 31px;
+}
+
+#ui {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #333;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 15px;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+#ui.gameover {
+    background-color: rgba(255, 107, 107, 0.9);
+    color: white;
+    font-size: 24px;
+    padding: 20px 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
