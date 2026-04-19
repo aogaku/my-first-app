@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>横スクロールアクションゲーム</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="gameContainer">
-        <div id="player"></div>
+        <div class="neon-grid" aria-hidden="true"></div>
+        <div id="player" class="neon"></div>
         <div id="enemies"></div>
+        <div class="scanlines" aria-hidden="true"></div>
     </div>
     
-    <div id="ui">
+    <div id="ui" class="hud">
         <p>矢印キーで移動 | ゲームオーバー時はリロード</p>
     </div>
 
